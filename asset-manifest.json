@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/BCCProvaLP21B/static/css/main.eefc237f.css",
+    "main.js": "/BCCProvaLP21B/static/js/main.ca5facdc.js",
+    "static/media/ricardoeletro.png": "/BCCProvaLP21B/static/media/ricardoeletro.b6832e7dca74d29262a5.png",
+    "index.html": "/BCCProvaLP21B/index.html",
+    "main.eefc237f.css.map": "/BCCProvaLP21B/static/css/main.eefc237f.css.map",
+    "main.ca5facdc.js.map": "/BCCProvaLP21B/static/js/main.ca5facdc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eefc237f.css",
+    "static/js/main.ca5facdc.js"
+  ]
+}
