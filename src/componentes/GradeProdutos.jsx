@@ -12,8 +12,12 @@ export default function GradeProdutos(props){
                 padding: '10px',
                 gap: '20px'}}>
                     {props.listaProdutos.map((produto) => (
-                        <Produto key={produto.id} produto={produto}/>
-                    ))}
+                    <Produto
+                    key={produto.id}
+                    produto={produto}
+                    adicionarAoCarrinho={props.adicionarAoCarrinho}
+                    />
+                ))}
             </div>
         )
     }

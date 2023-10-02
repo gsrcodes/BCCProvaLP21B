@@ -1,6 +1,13 @@
 import { useState } from "react";
 export default function Produto(props){
     const [quantidade, setQuantidade] = useState(1);
+
+  const clickCompra = () => {
+    const quantidadeInt = parseInt(quantidade, 10);
+    props.adicionarAoCarrinho(props.produto, quantidadeInt);
+    setQuantidade(1);
+  };
+
     return(
         <div style={{
             width: '200px',
@@ -73,7 +80,7 @@ export default function Produto(props){
                         height: '40px',
                         width: '120px',
                     }}
-                    type='button'>
+                    type='submit' onClick={clickCompra}>
                         Comprar
                 </button>
             </div>

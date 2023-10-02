@@ -1,4 +1,8 @@
+import { useState, useEffect } from "react";
 export default function Carrinho(props) {
+    useEffect(() => {
+        console.log("Quantidade no Carrinho:", props.qtdCarrinho);
+      }, [props.qtdCarrinho]);
     return (
         <div style={{
             display: 'flex',
@@ -18,7 +22,7 @@ export default function Carrinho(props) {
                 padding: '2px',
                 width: '40px'
             }} id='icone-carrinho'>
-                <button id='botao-carrinho'style={{
+                <button id='botao-carrinho' style={{
                     backgroundColor: "inherit",
                     border: '0px',
                 }
